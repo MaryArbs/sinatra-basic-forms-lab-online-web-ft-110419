@@ -14,5 +14,8 @@ class App < Sinatra::Base
     @puppy = Puppy.new(params[:name], params[:breed], params[:age])
 
      erb :display_puppy
+
+     # recieves a request from /new at /puppy
+     #displays the puppy information dynamically
   end
 end

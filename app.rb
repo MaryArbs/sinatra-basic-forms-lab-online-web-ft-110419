@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/new' do
+  get '/new' do  #renders a form that can POST a name, breed, and age
     erb :create_puppy
   end
 
